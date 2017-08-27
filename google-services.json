@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1013134863937",
+    "firebase_url": "https://takeandeat-9c8e0.firebaseio.com",
+    "project_id": "takeandeat-9c8e0",
+    "storage_bucket": "takeandeat-9c8e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013134863937:android:4d973ce8611ae520",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013134863937-h9iom574jemg94q177j5p4mbamcrenrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRzwYJyNLLdPqu9ZCAt711f8ahVy1yjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

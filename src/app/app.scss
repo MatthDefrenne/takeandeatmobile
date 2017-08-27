@@ -14,3 +14,49 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+
+.item-ios {
+  background: transparent;
+}
+
+.toolbar-background {
+  background-color: white;
+}
+.header::after {
+background-image: none;
+}
+.toolbar-title {
+  color:  #f5501f
+
+}
+.light {
+		font-weight: 100;
+  }
+.card-content {
+  padding: 5px 16px;
+}
+.card {
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    font-size: 1.4rem;
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+  .bar-button-default {
+        color: #f5501f;
+    }
+
+        .card {
+        border-radius: 0;
+    }
+
+.tabs .tabbar {
+    background: transparent;
+}
+.footer::before, .tabs[tabsPlacement="bottom"] > .tabbar::before {
+    display: none;
+}

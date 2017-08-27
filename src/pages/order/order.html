@@ -1,0 +1,56 @@
+<!--
+  Generated template for the OrderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Votre panier
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" >Retour</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p *ngIf="cartProvider.cart.length == 0" text-center>Votre panier est vide</p>
+  <div *ngIf="cartProvider.cart.length > 0">
+
+ <ion-card *ngFor="let item of cartProvider.cart"  style="    border-bottom: 1px solid #d6d6d6;">
+
+  <ion-card-header style="font-weight: bold;">
+{{ item.name }} <div text-right>{{item.price}} €</div> 
+  </ion-card-header>
+
+  <ion-card-content>
+   <span *ngIf="item.supplementsAdded">
+         <div style="color:#656565" *ngFor="let supp of item.supplementsAdded">
+          {{supp.name}}, {{supp.price}} €
+         </div>
+    </span>
+  </ion-card-content>
+
+</ion-card>
+
+<div  style="text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+">
+  SOUS TOTAL : {{ cartProvider.cartPrice}}
+</div>
+  </div>
+
+</ion-content>
+
+
+<ion-footer  >
+      <button ion-button color="primary" *ngIf="cartProvider.cart.length != 0"  block large  (click)="validatePanier()">  <ion-icon name="restaurant" style="    margin-right: 10px;"></ion-icon>
+ Valider ma commande</button>
+</ion-footer>

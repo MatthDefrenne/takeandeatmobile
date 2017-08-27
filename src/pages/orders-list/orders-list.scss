@@ -1,0 +1,26 @@
+page-orders-list {
+  .card-title {
+        font-size: 20px;
+    font-weight: bold;
+    }
+
+    .done {
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #8BC34A
+    }
+    .inProgress {
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #4494d8
+    }
+
+    .scroll-content {
+        margin-top: 30px;
+    }
+}
+

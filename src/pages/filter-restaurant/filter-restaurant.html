@@ -1,0 +1,21 @@
+<!--
+  Generated template for the FilterRestaurantPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+<div padding style="    font-size: 25px;
+    font-weight: bold;">
+  Qu'est-ce que vous souhaitez mangez?
+</div>
+
+<ion-list>
+  <button ion-item *ngFor="let item of filters" (click)="selectAndDismiss(item)">
+    <ion-label>    <img width="32px" src="./png/{{item.img}}">
+{{item.name}}</ion-label>
+  </button>  
+</ion-list>
+
+</ion-content>
